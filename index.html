@@ -4,21 +4,55 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=New+Rocker&display=swap"
+      rel="stylesheet"
+    />
     <title>Legend Forge</title>
   </head>
-  <body>
-    <div>
-      <h1>Band Name Generator</h1>
+  <body class="flex flex-col min-h-screen bg-zinc-700">
+    <header class="flex flex-col p-10 bg-slate-800">
+      <h1
+        class="font-bold text-center text-8xl text-rose-500 p-5"
+        style="font-family: 'New Rocker'"
+      >
+        Legend Forge
+      </h1>
+      <h3
+        class="font-semibold text-center text-3xl pt-3 text-slate-300"
+        style="font-family: 'Courier New', Courier, monospace"
+      >
+        Band Name Generator
+      </h3>
+    </header>
+    <main class="flex-grow">
+      <p
+        class="text-center text-2xl text-amber-500 p-5"
+        style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif"
+      >
+        Click the button to reveal your new band name!
+      </p>
 
-      <p>Click the button to reveal your new band name</p>
-
-      <div id="band-name">
+      <div class="flex justify-center p-5 text-4xl text-slate-300" id="band-name">
         <!-- Band name will appear here -->
       </div>
-
-      <button id="generate-btn">Generate Name</button>
-    </div>
+      <div class="flex justify-center p-5">
+        <button
+          class="btn-primary bg-rose-500 hover:bg-indigo-700 rounded-4xl p-3 text-white"
+          style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"
+          id="generate-btn"
+        >
+          Generate Name
+        </button>
+      </div>
+    </main>
+    <footer
+      class="flex justify-center text-slate-300"
+      style="font-family: 'Courier New', Courier, monospace"
+    >
+      &copyShelby Norris
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
